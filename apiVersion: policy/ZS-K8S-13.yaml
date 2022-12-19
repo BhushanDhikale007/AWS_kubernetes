@@ -9,15 +9,15 @@ spec:
     - NET_RAW
   requiredDropCapabilities:
     - NET_RAW
-  privileged: true
-  allowPrivilegeEscalation: true
-  automountServiceAccountToken: true
+  privileged: false
+  allowPrivilegeEscalation: false
+  automountServiceAccountToken: false
   requiredDropCapabilities: None
   runAsUser:
     rule: RunAsAny
-  hostPID: true
-  hostIPC: true
-  hostNetwork: true
+  hostPID: false
+  hostIPC: false
+  hostNetwork: false
   hostPorts:
   - min: 1
     max: 65536
